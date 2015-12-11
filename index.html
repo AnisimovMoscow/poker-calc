@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Покер-калькулятор</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <form class="form-horizontal">
+
+                <div class="control-group">
+                    <label class="control-label">Позиция</label>
+                    <div class="controls">
+                        <div class="btn-group position">
+                            <button type="button" class="btn btn-default" data-val="1">1</button>
+                            <button type="button" class="btn btn-default" data-val="2">2</button>
+                            <button type="button" class="btn btn-default" data-val="3">3</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Известные карты</label>
+                    <div class="controls known">
+                        <input type="number" name="known" class="input-mini">
+                        <button type="button" class="btn" data-val="5">+5</button>
+                        <button type="button" class="btn" data-val="3">+3</button>
+                        <button type="button" class="btn" data-val="2">+2</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls combos">
+                        <a href="" data-val="13">Масть</a>
+                        <a href="" data-val="4">Номинал</a>
+                        <a href="" data-val="8">Номинал &times; 2</a>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Осталось аутов</label>
+                    <div class="controls remain_outs">
+                        <input type="number" name="remain_outs" class="input-mini">
+                        <button type="button" class="btn" data-val="-1">-1</button>
+                        <button type="button" class="btn" data-val="-2">-2</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Получить аутов</label>
+                    <div class="controls needed_outs">
+                        <input type="number" name="needed_outs" class="input-mini">
+                        <button type="button" class="btn" data-val="-1">-1</button>
+                        <button type="button" class="btn" data-val="-2">-2</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Осталось просмотров</label>
+                    <div class="controls views">
+                        <input type="number" name="views" class="input-mini">
+                        <button type="button" class="btn" data-val="-3">-3</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="well well-small result hide"></div>
+                        <div class="progress hide">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

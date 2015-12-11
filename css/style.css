@@ -1,0 +1,22 @@
+.wrapper {
+    margin-top: 16px;
+    max-width: 500px;
+}
+
+.combos a {
+    margin-right: 8px;
+    border-bottom: 1px dashed; 
+}
+
+.combos a:hover {
+    text-decoration: none;
+}
+
+.result {
+    float: left;
+    font-weight: bold;
+}
+
+.progress {
+    clear: both;
+}
